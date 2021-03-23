@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,23 +14,18 @@ using System.Windows.Shapes;
 namespace WpfLessons
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for StackPanelDemo.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StackPanelDemo : UserControl
     {
-        public MainWindow()
+        public StackPanelDemo()
         {
             InitializeComponent();
         }
 
-        private void MenuItemStackPanel_Click(object sender, RoutedEventArgs e)
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
+            //rainbowStackPanel.Orientation = Orientation.Horizontal;
         }
     }
 }
