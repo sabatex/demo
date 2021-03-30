@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="aquamarine" Color="Aquamarine" Opacity="0.9"/>
+    <Style x:Key="primaryButton" TargetType="Button">
+        <Style.Setters>
+            <Setter Property="Background" Value="{StaticResource aquamarine}"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style.Setters>
+    </Style>
+
+</ResourceDictionary>

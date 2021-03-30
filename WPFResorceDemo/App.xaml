@@ -1,0 +1,15 @@
+﻿<Application x:Class="WPFResorceDemo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WPFResorceDemo"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!--Глобальний ресурс для застосунку-->
+        <ResourceDictionary >
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="WhiteThemeDictionary.xaml" x:Uid="123"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
