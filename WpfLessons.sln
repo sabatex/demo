@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29709.97
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfLessons", "WpfLessons\WpfLessons.csproj", "{D46A8F04-80D5-4120-ABC7-76A7412AD729}"
 EndProject
@@ -25,13 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateTree", "TemplateTre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowExtended", "WindowExtended\WindowExtended.csproj", "{09221F48-D4FA-4D90-A063-3920573DC5C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUserControl", "TestUserControl\TestUserControl.csproj", "{BD5FA7D5-E71C-4BCB-819D-75E2619A1E5A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson_StackPanel", "Lesson_StackPanel\Lesson_StackPanel.csproj", "{3BB30839-4FB5-4DE7-9F55-D7CC764BF30C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElementStyleDemo", "ElementStyleDemo\ElementStyleDemo.csproj", "{81C3E3C3-D6AA-4260-A4F2-CAAA232F0BDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFResorceDemo", "WPFResorceDemo\WPFResorceDemo.csproj", "{79729911-DB2C-4A0F-B39E-63E7716B1994}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFResorceDemo", "WPFResorceDemo\WPFResorceDemo.csproj", "{79729911-DB2C-4A0F-B39E-63E7716B1994}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,10 +81,6 @@ Global
 		{09221F48-D4FA-4D90-A063-3920573DC5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09221F48-D4FA-4D90-A063-3920573DC5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09221F48-D4FA-4D90-A063-3920573DC5C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BD5FA7D5-E71C-4BCB-819D-75E2619A1E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD5FA7D5-E71C-4BCB-819D-75E2619A1E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD5FA7D5-E71C-4BCB-819D-75E2619A1E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD5FA7D5-E71C-4BCB-819D-75E2619A1E5A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3BB30839-4FB5-4DE7-9F55-D7CC764BF30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3BB30839-4FB5-4DE7-9F55-D7CC764BF30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BB30839-4FB5-4DE7-9F55-D7CC764BF30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
