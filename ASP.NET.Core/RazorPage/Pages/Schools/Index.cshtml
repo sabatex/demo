@@ -1,0 +1,88 @@
+﻿@page
+@model RazorPage.Pages.Schools.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Школи</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+    <input type="file" name="inputfile" id="inputfile" />
+    <input type="file" name="inputfileAJAX" id="inputfileAJAX" />
+
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.School[0].Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.School) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<script type="text/javascript">
+    function readFile() {
+        var fr = new FileReader();
+        fr.onload = function () {
+            var jsResult = JSON.parse(fr.result);
+            console.log(jsResult);
+            jsResult.forEach(item => {
+                $.ajax({
+                    type: "POST",
+                    url: "/api/schools",
+                    beforeSend: function (xhr) { xhr.setRequestHeader("XSRF-TOKEN", $('input:hidden[name="__RequestVerificationToken"]').val()); },
+                    data: JSON.stringify(item),
+                    contentType: "application/json;charset=utf-8",
+                    dataType: "json"
+                });
+            });
+        }
+        fr.readAsText(this.files[0]);
+    }
+    let inputElement = document.getElementById('inputfile');
+    inputElement.addEventListener('change', readFile);
+
+
+    function readFileAJAX() {
+        let fr = new FileReader();
+        fr.onload = function () {
+            var jsResult = JSON.parse(fr.result);
+            console.log(jsResult);
+            jsResult.forEach(item => {
+                let xhttp = new XMLHttpRequest();
+                let msg = JSON.stringify(item);
+                xhttp.open("POST", "/api/schools");
+                xhttp.setRequestHeader("XSRF-TOKEN", $('input:hidden[name="__RequestVerificationToken"]').val());
+                xhttp.setRequestHeader("Content-Type", "application/json;charset=utf-8");
+                xhttp.send(msg);
+
+            });
+        }
+
+        fr.readAsText(this.files[0])
+
+    }
+
+    let inputAJAXElement = document.getElementById('inputfileAJAX');    
+    inputAJAXElement.addEventListener('change', readFileAJAX);
+
+
+</script>
