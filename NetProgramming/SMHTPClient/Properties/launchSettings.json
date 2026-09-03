@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SMHTPClient": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Send my email ...\""
+    }
+  }
+}
