@@ -1,0 +1,11 @@
+﻿@page
+@model WebChess.Pages.PongModel
+@{
+    ViewData["Title"] = "Pong";
+}
+
+<div id="pongContainer" style="box-sizing:content-box;border-style:solid;width:500px;height:500px">
+    <canvas id="pong" width="500" height="500"></canvas>
+</div>
+
+<script src="~/js/pong.js"></script>

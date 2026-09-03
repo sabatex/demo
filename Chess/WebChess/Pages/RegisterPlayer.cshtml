@@ -1,0 +1,32 @@
+﻿@page
+@model WebChess.Pages.RegisterPlayerModel
+@{
+    ViewData["Title"] = "RegisterPlayer";
+}
+
+<h1>RegisterPlayer</h1>
+<form name="registerPlayerForm" method="post" onsubmit="return validateForm()">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" /><br />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div>
+         SurName:<br />
+        <input name="surName" required/><br />
+        <span id="surNameValid" style="color:red"></span>
+
+    </div>
+    
+    <p>
+        <input type="submit" value="Зареєструвати" />
+    </p>
+</form>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/FormValidation.js"></script>
+
+}
+

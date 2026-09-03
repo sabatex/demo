@@ -1,0 +1,85 @@
+.chessDesk{
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.playerDesk{
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+
+
+.userDashBoard{
+    width: 200px;
+    height: 220px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.userWhiteDashBoard{
+    margin-top: 6px;
+}
+.userBlackDashBoard{
+
+}
+
+.chessTable {
+    display: grid;
+    grid-template-columns: 10px auto auto auto auto auto auto auto auto 10px;
+    grid-template-rows: 20px auto auto auto auto auto auto auto auto 20px;
+    padding-left: 0;
+    padding-top: 0;
+    grid-gap:0;
+    border-style: solid;
+    width: 426px;
+    height: 446px;
+    box-sizing: border-box;
+}
+.gripDeskRow {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+   
+}
+.gripDeskColumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chessCell {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+}
+.blackCell {
+    background-color: lightgray;
+}
+
+.chessCellCanMove:hover {
+    background-color: lightgreen;
+}
+
+.canBeat {
+    fill:red !important;
+}
+
+.chessCellDestinationMark {
+    background-color: lightblue;
+}
+
+.cellSelected {
+    background-color: aqua;
+}
+
+
+@media screen and (max-width:730px){
+    .chessDesk {
+        flex-direction: column;
+    }
+}

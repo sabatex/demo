@@ -1,0 +1,26 @@
+﻿@page
+@model WebChess.Pages.ChessModel
+@{
+    ViewData["Title"] = "Chess";
+}
+
+    <div class="d-flex w-100 bg-light justify-content-around mb-3" id="chessMenu">
+        <div class="bg-white border-left border-top-0 border-bottom border-right font-weight-bold text-uppercase rounded-0 w-100 d-flex justify-content-between align-items-center p-2 menu-item menu-item-1"><span class="bg-danger rounded-circle menu-color" style="display:block;width:25px;height:25px;"></span><span class="menu-content mr-4">My Games</span></div>
+        <div class="bg-white border-left border-top-0 border-bottom border-right font-weight-bold text-uppercase rounded-0 w-100 d-flex justify-content-between align-items-center p-2 menu-item menu-item-2"><span class="bg-primary rounded-circle menu-color" style="display:block;width:25px;height:25px;"></span><span class="menu-content mr-4">Joined Games</span></div>
+        <div class="bg-white border-left border-top-0 border-bottom border-right font-weight-bold text-uppercase rounded-0 w-100 d-flex justify-content-between align-items-center p-2 menu-item menu-item-3"><span class="bg-warning rounded-circle menu-color" style="display:block;width:25px;height:25px;"></span><span class="menu-content mr-4">Online Games</span></div>
+    </div>
+<div class="container-fluid" id="container">
+    <div class="chessDesk" id="chessDesk">
+
+    </div>
+</div>
+
+
+<input asp-for="Party" hidden />
+<input asp-for="User1" hidden />
+<input asp-for="User2" hidden />
+<input asp-for="InitialDesk" hidden />
+@Html.AntiForgeryToken()
+
+<script src="~/lib/svg/svg.js" asp-append-version="true"></script>
+<script src="~/js/chess.js" type="module" asp-append-version="true"></script>

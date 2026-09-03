@@ -1,0 +1,36 @@
+﻿@page
+@model WebChess.Pages.SelectPartyModel
+@{
+    ViewData["Title"] = "SelectParty";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+    <form method="post" name="SelectParty">
+        <label asp-for="SelectedParty">Список ігор до яких можна приєднатись:</label><br />
+
+        @if (Model.MyParties.Length == 0 && Model.EnabledParties.Length == 0)
+        {
+            <select asp-for="SelectedParty">
+                @foreach (var cnt in Model.MyParties)
+                {
+                    <option value="@cnt.Id">@cnt.User1 @cnt.Id</option>
+                }
+                @foreach (var cnt in Model.EnabledParties)
+                {
+                    <option value="@cnt.Id">@cnt.User2 @cnt.Id</option>
+                }
+
+            </select>
+        }
+        else
+        {
+            <P>Нема розпочатих ігор </P>
+        }
+        <br />
+        <label asp-for="IsNew">Розпочати нову гру</label>
+        <input asp-for="IsNew" />
+
+
+        <input type="submit" value="Ок" />
+    </form>
+
