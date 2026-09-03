@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADONET", "ADONET\ADONET.csproj", "{BE79EF3B-9956-472C-B10F-5019EA81CE4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestoranClient", "RestoranClient\RestoranClient.csproj", "{0F444C3D-A6DC-4DE1-9554-688A70FE9A9F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigrationRestoran", "MigrationRestoran\MigrationRestoran.csproj", "{A5F92499-D19D-4532-80A4-DF1410200586}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestoranClientDapper", "RestoranClientDapper\RestoranClientDapper.csproj", "{3C46ED9A-0F04-4EA4-BB27-FEA388847D6F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestoranAdmin", "RestoranAdmin\RestoranAdmin.csproj", "{E3C6A947-7AC4-46BC-B0DE-2BE744404B32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestoranModel", "RestoranModel\RestoranModel.csproj", "{F5284BFD-1B43-4EA0-97D5-65D53D022A32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestoranClientNoBase", "RestoranClientNoBase\RestoranClientNoBase.csproj", "{5E3463FC-CD00-4471-8546-03E4571658A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE79EF3B-9956-472C-B10F-5019EA81CE4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE79EF3B-9956-472C-B10F-5019EA81CE4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE79EF3B-9956-472C-B10F-5019EA81CE4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE79EF3B-9956-472C-B10F-5019EA81CE4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F444C3D-A6DC-4DE1-9554-688A70FE9A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F444C3D-A6DC-4DE1-9554-688A70FE9A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F444C3D-A6DC-4DE1-9554-688A70FE9A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F444C3D-A6DC-4DE1-9554-688A70FE9A9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5F92499-D19D-4532-80A4-DF1410200586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5F92499-D19D-4532-80A4-DF1410200586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5F92499-D19D-4532-80A4-DF1410200586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5F92499-D19D-4532-80A4-DF1410200586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C46ED9A-0F04-4EA4-BB27-FEA388847D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C46ED9A-0F04-4EA4-BB27-FEA388847D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C46ED9A-0F04-4EA4-BB27-FEA388847D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C46ED9A-0F04-4EA4-BB27-FEA388847D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C6A947-7AC4-46BC-B0DE-2BE744404B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C6A947-7AC4-46BC-B0DE-2BE744404B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C6A947-7AC4-46BC-B0DE-2BE744404B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C6A947-7AC4-46BC-B0DE-2BE744404B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5284BFD-1B43-4EA0-97D5-65D53D022A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5284BFD-1B43-4EA0-97D5-65D53D022A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5284BFD-1B43-4EA0-97D5-65D53D022A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5284BFD-1B43-4EA0-97D5-65D53D022A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E3463FC-CD00-4471-8546-03E4571658A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3463FC-CD00-4471-8546-03E4571658A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E3463FC-CD00-4471-8546-03E4571658A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3463FC-CD00-4471-8546-03E4571658A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3BB0672-59C1-4519-97AD-E1A44BE1316C}
+	EndGlobalSection
+EndGlobal
