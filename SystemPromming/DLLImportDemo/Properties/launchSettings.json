@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DLLImportDemo": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

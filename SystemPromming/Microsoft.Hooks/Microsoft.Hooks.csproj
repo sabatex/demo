@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+	<UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="CbtHook.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LocalWindowsHook.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MouseHook.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MouseHookComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="MouseHookEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
