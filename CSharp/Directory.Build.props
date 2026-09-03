@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <!-- Centralized output path for all projects -->
+    <!-- Builds will be placed under E:\builds\<ProjectName>\<Configuration> -->
+	<!-- <OutputPath>E:\builds\CSharp\$(MSBuildProjectName)\bin\$(Configuration)\</OutputPath> -->
+	<!-- <BaseIntermediateOutputPath>E:\builds\CSharp\$(MSBuildProjectName)\obj\$(Configuration)\</BaseIntermediateOutputPath> -->
+  </PropertyGroup>
+</Project>
