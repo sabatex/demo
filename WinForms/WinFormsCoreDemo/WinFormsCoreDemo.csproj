@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="GDIDemo.cs" />
+    <Compile Update="GDIDemo.Designer.cs">
+      <DependentUpon>GDIDemo.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="GDIDemo.resx">
+      <DependentUpon>GDIDemo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
