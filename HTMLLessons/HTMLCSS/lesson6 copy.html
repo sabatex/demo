@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<!-- #region -->
+<!-- box-sizing-->
+
+
+<head>
+    <style>
+        .green-border {
+            border-style: solid;
+            border-color: green;
+            height: 50px;
+        }
+
+        .red-border {
+            border-style: solid;
+            border-color: red;
+            height: 50px;
+        }
+
+        .box-sizing-content {
+            box-sizing: content-box;
+        }
+
+        .box-sizing-border {
+            box-sizing: border-box;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="green-border box-sizing-content"
+        style="position: fixed;top: 0;left:0;width: 100%; display: flex;align-items: center;justify-content: center;">
+        BOX Sizing content-box
+    </div>
+    <div class="red-border box-sizing-border"
+        style="position: fixed;top: 50px;left:0;width: 100%; display: flex;align-items: center;justify-content: center;">
+        BOX Sizing border-box
+    </div>
+    <div id="first-lorem" style="margin-top: 105px;">
+        Lorem ipsum dolor <img src="pineapple.jpg" alt="apple" height="100" style="float: left;">
+        sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio,
+        vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+        Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+        Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+        ipsum dignissim ac ...
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+        lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+        auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu,
+        lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi,
+        sed ullamcorper ipsum dignissim ac ...
+    </div>
+    <div class="green-border" style="height: auto;background-color: lemonchiffon;">
+        <p style="float: right;"">
+                <img src=" pineapple.jpg" alt="apple" height="100"
+            style="float: inherit;padding: 5px;margin:20px;border-style: solid;box-sizing: border-box;">
+            Lorem <b style="display: inline-block;border-style: dotted;">ipsum</b> dolor sit amet, consectetur
+            adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+            scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae
+            massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis
+            in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi,
+            sed ullamcorper ipsum dignissim ac ...
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+            nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+            congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis
+            sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+            Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac ...
+        </p>
+    </div>
+
+
+
+    <div style="display: flex;flex-direction: column;">
+        <div class="green-border">
+            block2
+        </div>
+        <div class="green-border">
+            block3
+        </div>
+        <div class="green-border">
+            block4
+        </div>
+        <div class="green-border">
+            block5
+        </div>
+        <div class="green-border">
+            block 1
+        </div>
+        <div class="green-border">
+            block2
+        </div>
+        <div class="green-border">
+            block3
+        </div>
+        <div class="green-border">
+            block4
+        </div>
+        <div class="green-border">
+            block5
+            <a href="#first-lorem" type="">на перший lorem</a>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

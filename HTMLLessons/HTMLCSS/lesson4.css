@@ -1,0 +1,28 @@
+/* default ul css */
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+
+  ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+
+
+  .rouded_border {
+    border-radius:2rem;
+    border-color: aqua;
+    border-style: solid;
+    padding: 10px;
+  }

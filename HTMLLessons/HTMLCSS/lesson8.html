@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button_link {
+            display: inline;
+            border-style: solid;
+            border-radius: 5px; 
+            padding: 5px;      
+        }
+        .button_link:hover {
+            background-color: aqua;
+        }
+        html {
+            overflow-y: hidden;
+            padding: 0;
+            margin: 0;
+        }
+        ul>li>a {
+            text-decoration: none;
+            text-decoration-line: none;
+            color: black;
+        }
+        .submenu:hover > ul {
+            visibility: visible;
+            
+        }
+        .submenu > ul{
+            visibility: hidden;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul >
+        <li class="button_link"><a href="http://aistudio.com.ua/" target="frame_window">Google</a></li>
+        <li class="button_link"><a href="http://104.ua/" target="frame_window">lesson5</a></li>
+        <li class="button_link"><a href="https://bigl.ua/" target="frame_window">lesson6</a></li>
+        <li class="button_link"><a href="https://www.ukrnames.com/" target="frame_window">lesson6</a></li>
+        <li class="button_link"><a href="https://www.ukrnames.com/" target="frame_window">lesson6</a></li>
+        <li class="button_link submenu">
+            Submenu
+            <ul class="button-link">
+                <li class="button_link">Menu</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <iframe src="http://www.google.com" frameborder="0" width="100%" height="3000" title="lesson4" name="frame_window" style="overflow-y: scroll;"></iframe>
+    
+        
+</body>
+</html>

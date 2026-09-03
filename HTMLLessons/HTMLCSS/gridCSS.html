@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        table {
+            width: 100%;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 2px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+
+        }
+
+        tr:hover {
+            background-color: teal;
+        }
+
+        td {
+            padding: 5px;
+            text-align: left;
+            vertical-align: baseline;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 150px auto 50px;
+            grid-gap: 1px;
+            grid-template-rows: 50px auto 25px;
+        }
+
+        .left-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            border-style: solid;
+            grid-row-start: 2;
+            grid-row-end: 4;
+
+        }
+
+        .left-button {
+            display: none;
+        }
+
+        .left-menu-items {
+
+            visibility: visible;
+            text-align: center;
+
+        }
+
+        .left-menu-button {
+            width: 90%;
+            margin-top: 4px;
+            border-radius: 5px;
+        }
+
+
+        .left-menu-button:hover {
+            background-color: darkturquoise;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .main-grid {
+                grid-template-columns: 25px auto 10px;
+            }
+
+            .left-button {
+                display: unset;
+            }
+
+            .left-menu-items {
+                display: none;
+            }
+
+            .left-menu {
+                justify-content: center;
+            }
+
+
+        }
+    </style>
+
+
+</head>
+
+<body class="main-grid">
+    <header style="grid-column-start:1;grid-column-end:4 ; text-align: center;border-style: solid;">
+        HEADER
+    </header>
+    <div class="left-menu">
+        <div class="material-icons left-button">arrow_forward_ios</div>
+        <div class="left-menu-items">
+            <button class="left-menu-button">Button1</button>
+            <button class="left-menu-button">Button2</button>
+            <button class="left-menu-button">Button3</button>
+            <button class="left-menu-button">Button4</button>
+            <button class="left-menu-button">Button5</button>
+        </div>
+    </div>
+    <main style="border-style: solid;text-align: center;">
+        MAIN
+        <table>
+            <caption>Список працівників</caption>
+            <colgroup>
+                <col span="2">
+                <col span="3" style="background-color:lightskyblue;">
+                <col span="2">
+                <col style="background-color: yellow;">
+            </colgroup>
+            <thead style="background-color: linen;">
+                <tr>
+                    <th rowspan="2" width=30px>№ п/п</th>
+                    <th rowspan="2" width=30px ">Фото</th>
+                <th colspan=" 3">Працівник</th>
+                    <th colspan="2">Телефон</th>
+                    <th rowspan="2">Зарплата</th>
+                </tr>
+
+                <tr>
+
+                    <th>Прізвище</th>
+                    <th>Імя</th>
+                    <th>ПоБатькові</th>
+                    <th>Домашній</th>
+                    <th>Робочий</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="material-icons">face</td>
+                    <td>Іванов</td>
+                    <td>Іван</td>
+                    <td>Іванович</td>
+                    <td>123-45-678</td>
+                    <td>212-00-546</td>
+                    <td>1000</td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="material-icons">directions_run</td>
+                    <td>Іванов</td>
+                    <td>Іван</td>
+                    <td>Іванович</td>
+                    <td>123-45-678</td>
+                    <td>212-00-546</td>
+                    <td>1000</td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="material-icons">tag_faces</td>
+                    <td>Іванов</td>
+                    <td>Іван</td>
+                    <td>Іванович</td>
+                    <td>123-45-678</td>
+                    <td>212-00-546</td>
+                    <td>1000</td>
+
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="material-icons">accessibility</td>
+                    <td>Іванов</td>
+                    <td>Іван</td>
+                    <td>Іванович</td>
+                    <td>123-45-678</td>
+                    <td>212-00-546</td>
+                    <td>1000</td>
+
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="material-icons">android</td>
+                    <td>Іванов</td>
+                    <td>Іван</td>
+                    <td>Іванович</td>
+                    <td>123-45-678</td>
+                    <td>212-00-546</td>
+                    <td>1000</td>
+
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr style="background-color: lightgray;">
+                    <td colspan="7" style="text-align: end;"><b>Всього</b></td>
+                    <td style="font-weight: bold;">5000</td>
+
+                </tr>
+            </tfoot>
+
+        </table>
+
+    </main>
+    <div style=" border-style: solid;">
+        RIGHT MENU
+    </div>
+    <footer style="border-style: solid;text-align: center;grid-column-start:2;grid-column-end:4 ;">
+        FOOTER
+    </footer>
+
+
+</body>
+
+</html>

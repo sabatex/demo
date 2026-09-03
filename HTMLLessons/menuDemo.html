@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            height: 20px;
+            width: 80px;
+            text-align: center;
+            vertical-align: middle;
+            border-style: solid;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <details>
+        <summary>Про школу</summary>
+        <p> Наша школа <b>Найкраща в Світі</b></p>
+    </details>
+
+
+    <div style="display: flex;">
+    <div class="item">
+        Home
+    </div>
+    <details class="item">
+     <summary>Categories</summary>
+     <div style="display: flex;flex-direction: column;">
+        <div class="item" style="margin-top: 10px;">Man</div>
+            <details class="item">
+            <summary>Woman</summary>
+            <div style="display: flex;flex-direction: column;margin-left: 80px;margin-top: -20px;">
+               <div class="item" >Man</div>
+               <div class="item">Woman</div>
+               <div class="item">Kids</div>
+           </div>
+        </details>
+
+        <div class="item">Kids</div>
+    </div>   
+    </details>
+    </div>
+</body>
+</html>

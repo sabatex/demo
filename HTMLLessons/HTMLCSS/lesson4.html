@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf8">
+  <style>
+    /* default ul css */
+    /*ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+
+  ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+  li {
+    display: list-item;
+    }
+    */
+    .rouded_border {
+      border-radius: 2rem;
+      border-color: aqua;
+      border-style: solid;
+      padding: 10px;
+      width: 300px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div style="position: static;border: 3px solid #73AD21;left: 30px;outline-style: dotted;">
+  position static left 30
+</div>
+<div style="position: relative;border: 3px solid #73AD21;left: 30px;top: 20px;">
+  position relative left 30
+</div>
+<div style="position: fixed;border: 3px solid #73AD21;left: 30px;">
+  position fixed left 30
+</div>
+<div style="position: fixed;border: 3px solid #73AD21;bottom: 0;">
+  position fixed bottom 0
+</div>
+
+  <div style="display: flex;">
+    <div class="rouded_border" >
+     <div>
+      <img src="cup-of-drink.png" height="50" width="50"  style="border:solid ;margin: 15px; padding: 15px; float: right;position: fixed;" alt="Це чашка">
+       <ul style="list-style-position: inside;margin-bottom: 5cm;">
+        <li style="list-style-image:url('fast-food.svg') ;">Кава - заварений напій, приготований зі смажених кавових
+          зерен ...</li>
+        <li style="list-style-image:url('tea.svg');">Чай</li>
+        <li>Молоко</li>
+      </ul>
+    </div>
+       <ul style="list-style-type:circle;margin-top: 0;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+      <img>
+      <ul style="list-style-type:none">
+        <li>Coffee</li>
+        <li>Tea
+          <ul style="list-style-type:disc;margin-left: -2rem;">
+            <li>Black tea</li>
+            <li>Green tea</li>
+          </ul>
+        </li>
+        <li>Milk</li>
+      </ul>
+
+      <ul>
+        <li>Black Coffee</li>
+        <li>Green Tea</li>
+        <li>Milk</li>
+      </ul>
+
+      <ul type="">
+        <li>Coffee
+          <ul>
+            <li>Black Coffee</li>
+            <li>Green Tea</li>
+            <li>Milk</li>
+          </ul>
+        </li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+
+
+
+
+    </div>
+    <div class="rouded_border" >
+      <img src="tea.svg" height="50" width="50" style="color: aqua;">
+      <!- Атрибути Attribute Value Description reversed reversed Specifies that the list order should be reversed
+        (9,8,7...) start number Specifies the start value of an ordered list type 1 A a I i Specifies the kind of marker
+        to use in the list -->
+        <ol>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
+
+        <ol type="i">
+          <li style="list-style-type: circle;">Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
+        <ol reversed type="A">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
+    </div>
+  </div>
+  <h4>
+    <font style="vertical-align: inherit;"></font>
+    <code class="w3-codespan">&lt;dl&gt; / &lt;dt&gt; / &lt;dd&gt;</code>
+  </h4>
+  <dl>
+    <dt>
+      <b>Визначення та використання</b>
+    </dt>
+    <dd>
+      Тег використовується для опису термін / ім'я в списку описів.
+      Тег використовується в поєднанні з &lt;dl&gt; (визначає список опис) і &lt;dt&gt; (визначення термінів / імен).
+      Всередині &lt;dd&gt;тегу можна помістити абзаци, розриви рядків, зображення, посилання, списки тощо.
+    </dd>
+
+
+    <dt  id="l4"><b>Milk</b></dt>
+    <dd>Black hot drink</dd>
+    <dd>White cold drink</dd>
+  </dl>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto illo impedit, earum saepe quo temporibus quis eaque numquam voluptas ipsa! Veritatis tenetur delectus quasi explicabo asperiores odio recusandae sapiente nostrum?</p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis neque atque minus deserunt minima pariatur sit fuga soluta, unde, maiores ea, aspernatur quae vero! Eligendi, repellat atque? A, rerum ratione.
+<p id="l4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae at similique et corrupti rem velit aliquam error, eos, ratione temporibus accusantium pariatur, fugiat porro officia repellat iusto perferendis corporis quo?</p>
+</body>
